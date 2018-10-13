@@ -125,7 +125,9 @@ section:nth-child(odd){
 } */
 
 #sec-1{
-    background: url('bg-0.jpeg');
+    background: url('bg-0.jpeg')  no-repeat 50% 50%;
+    background-position : cover;
+
 }
 
 #sec-1 p, #sec-1 h2{
@@ -134,7 +136,8 @@ section:nth-child(odd){
 }
 
 #sec-2{
-    background: url('bg-1.jpeg');
+    background: url('bg-1.jpeg') no-repeat 50% 50%;
+    background-position : cover;
     color: #333;
 }
 
