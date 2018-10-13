@@ -1,0 +1,154 @@
+html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+
+
+header {
+    margin:  100px 0 200px 120px;
+    color: #333;
+    font-family: "Great Vibes";
+    font-size: 60px;
+    font-weight: 700;
+}
+
+header p, .footer a{
+    font-family: "Amatic SC";
+    font-size:50px;
+}
+
+header p{
+    color: #333 ;
+}
+
+.toggle-btn{
+    margin: 1.4em;
+    padding: 1em;
+    position: absolute;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    z-index: 2;
+}
+
+span.one{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #333;
+}
+
+span.two{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-top: 12px;
+    background: #333;
+}
+
+.menu{
+    z-index: 1;
+    position: absolute;
+    background: #88ff86;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+}
+
+.data{
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+li:first-child{
+    font-size: 24px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+li:not(:first-child){
+    font-size: 46px;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-family: Poppins;
+}
+
+section h2{
+    font-family: "Caveat";
+    font-weight: lighter;
+}
+
+section p{
+    font-family: "Amatic SC";
+    font-size: 30px;
+}
+
+section{
+    padding: 2em;
+    height: 100vh;
+    position: relative;
+    margin: 2%;
+}
+
+.sec-content{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+/* section:nth-child(even){
+    background: #ffcdcd;
+}
+
+section:nth-child(odd){
+    background: #ffe6eb;
+} */
+
+#sec-1{
+    background: url('bg-0.jpeg');
+}
+
+#sec-1 p, #sec-1 h2{
+    font-size: 32px;
+    color: #fff ;
+}
+
+#sec-2{
+    background: url('bg-1.jpeg');
+    color: #333;
+}
+
+footer{
+    height: 30vh;
+    position: relative;
+}
+
+footer a{
+    color: #333 !important;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.anim{
+    animation-delay: 0.5s;
+}

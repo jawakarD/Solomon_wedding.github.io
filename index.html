@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Playfair+Display|Poppins|Amatic+SC|Patrick+Hand|Great+Vibes" rel="stylesheet">
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="projects.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <a href="index.html">
+                    <img src="logo2.jpg" alt="logo">
+                </a>
+                <div class="toggle-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+            </nav>
+            <header id="header" class="header">
+                <h1>Solomon Weddings</h1>
+                <p>The best Planners</p>
+
+            </header>
+            <div class="menu">
+                <div class="data">
+                    <ul>
+                        <li>Navigation</li>
+                        <li><a href="#sec-1">Home</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="sec-1">
+                <div class="sec-content my-auto">
+                    <h2>Who we are ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+
+            <section id="sec-2">
+                <div class="sec-content">
+                    <h2>What we do ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+            <footer class="footer">
+                    <p><a href="#header">To the top</a></p>
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+
+            var t1 = new TimelineMax({paused: true});
+
+            t1.to('.one', 0.8,{
+                y: 6,
+                rotation: 45,
+                ease: Expo.easeInOut
+            })
+
+            t1.to('.two', 0.8,{
+                y: -6,
+                rotation: -45,
+                ease: Expo.easeInOut,
+                delay: -0.8
+            })
+
+            t1.to('.menu',2, {
+                top: '0%',
+                ease: Expo.easeInOut,
+                dalay: -2
+            })
+
+            t1.staggerFrom(".menu ul li", 2, {
+                x: -200,
+                opacity:0,
+                ease: Expo.easeInOut,
+            }, 0.3)
+
+            t1.reverse();
+            $(document).on("click", ".toggle-btn", function() {
+                t1.reversed(!t1.reversed());
+            })
+        </script>
+    </body>
+</html>
